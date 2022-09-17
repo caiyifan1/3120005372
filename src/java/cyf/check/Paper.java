@@ -1,4 +1,4 @@
-package cn.cyf.check;
+package java.cyf.check;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -10,6 +10,10 @@ import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+/**
+ * 论文类
+ * @param <C>Collection
+ */
 public class Paper<C extends Collection>{
     private C features;
 
@@ -21,16 +25,14 @@ public class Paper<C extends Collection>{
         this.features = features;
     }
 
-    public Paper(String path,C features){
-        try(BufferedReader br=new BufferedReader(new FileReader(path))
-            ){
-            String line;
-            while ((line= br.readLine())!=null){
-                split(line);
-            }
-        }catch (IOException e){
-            e.printStackTrace();
+    public Paper(String path,C features)throws IOException{
+        this.features = features;
+        BufferedReader br = new BufferedReader(new FileReader(path));
+        String line;
+        while ((line = br.readLine()) != null) {
+            split(line);
         }
+        br.close();
     }
 
     public void split(String s){
