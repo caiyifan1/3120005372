@@ -17,6 +17,7 @@ public class PaperPass {
     public static void main(String[] args) throws IOException{
         PaperComparator comparator = new PaperComparator();
         // 初始化原始论文和抄袭论文
+
         Paper originPaper = new Paper<>(args[0], new HashSet<String>());
         Paper copyPaper = new Paper<>(args[1], new ArrayList<String>());
         int repeatCount = comparator.compare(originPaper, copyPaper);
@@ -30,7 +31,7 @@ public class PaperPass {
             file.createNewFile();
         }
         FileWriter fw = new FileWriter(file, true);
-        fw.write("原文论文路径：" + args[0] + "\n");
+        fw.write("原文论文路径：" + args[0]+ "\n");
         fw.write("抄袭论文路径：" + args[1] + "\n");
         fw.write("重复率：" + String.format("%.2f", rate) + "\n\n");
         fw.close();
