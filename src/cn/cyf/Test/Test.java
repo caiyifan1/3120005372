@@ -1,6 +1,6 @@
-package java.cyf.Test;
+package cn.cyf.Test;
 
-import java.cyf.check.PaperCheck;
+import cn.cyf.check.PaperPass;
 import java.io.IOException;
 
 public class Test {
@@ -8,10 +8,10 @@ public class Test {
         String[] paths ={
                 "C:\\Users\\caibu\\Desktop\\orig.txt",
                 "C:\\Users\\caibu\\Desktop\\orig_0.8_add.txt",
-                "java/cyf/outcome.txt"
+                "cn/cyf/outcome.txt"
         };
         try{
-            PaperCheck.main(paths);
+            PaperPass.main(paths);
         }catch (IOException e){
             e.printStackTrace();
             System.out.println("数据流异常");

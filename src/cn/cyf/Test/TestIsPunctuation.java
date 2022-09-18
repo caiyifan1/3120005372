@@ -1,9 +1,9 @@
-package java.cyf.Test;
+package cn.cyf.Test;
 
-import java.cyf.check.Paper;
+import cn.cyf.check.Paper;
 import java.util.HashSet;
 
-public class TestIsSymbol {
+public class TestIsPunctuation {
     /**
      * 测试是否为标点符号
      */
@@ -12,7 +12,7 @@ public class TestIsSymbol {
         Paper paper=new Paper(new HashSet<String>());
         char[] chars = s.toCharArray();
         for(char c: chars){
-            if(paper.isSymbol(c)){
+            if(paper.isPunctuation(c)){
                 System.out.print(c);
             }
         }

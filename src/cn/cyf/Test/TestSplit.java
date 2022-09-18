@@ -1,6 +1,6 @@
-package java.cyf.Test;
+package cn.cyf.Test;
 
-import java.cyf.check.Paper;
+import cn.cyf.check.Paper;
 import java.util.HashSet;
 import java.util.Set;
 

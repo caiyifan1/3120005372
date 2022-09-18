@@ -1,6 +1,6 @@
-package java.cyf.Test;
+package cn.cyf.Test;
 
-import java.cyf.check.Paper;
+import cn.cyf.check.Paper;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -13,7 +13,7 @@ public class PaperTest {
      * 测试Paper类
      */
     public void paperTest()  {
-        String path= "java/cyf/orig.txt";
+        String path= "cn/cyf/orig.txt";
         try {
             new Paper(path, new HashSet<String>());
         }catch (FileNotFoundException e){
