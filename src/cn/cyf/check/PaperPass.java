@@ -11,7 +11,8 @@ public class PaperPass {
 
     /**
      * 示例中传入三个参数，其中args[0]代表原始论文存储路径，
-     * args[1]代表抄袭论文存储路径，args[2]代表论文查重后结果文件的存储路径
+     * args[1]代表抄袭论文存储路径
+     * args[2]代表论文查重后结果文件的存储路径
      * @param args 传入的参数
      */
     public static void main(String[] args) throws IOException{

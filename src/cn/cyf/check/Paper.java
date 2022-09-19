@@ -32,8 +32,7 @@ public class Paper<T extends Collection> {
     }
 
     /**
-     * 将字符串以两个字符为单元有重叠地进行切割，切割的结果存入HashSet中。
-     * 例如：“一位真正的作家”分词后的结果：一位、位真、真正、正的、的作、作家。
+     *分词方法
      */
     public void split(String s){
         char[] chars = s.toCharArray();
