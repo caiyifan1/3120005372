@@ -1,5 +1,7 @@
 package cn.cyf.check;
 
+import org.junit.jupiter.api.Test;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,8 +15,8 @@ public class Paper<T extends Collection> {
     public Paper(T features){
         this.features = features;
     }
-
     public Paper(String path, T features) throws IOException {
+
         this.features = features;
         BufferedReader br = new BufferedReader(new FileReader(path));
         String line;

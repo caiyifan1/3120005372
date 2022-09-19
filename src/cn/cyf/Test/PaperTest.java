@@ -1,6 +1,7 @@
 package cn.cyf.Test;
 
 import cn.cyf.check.Paper;
+import org.junit.jupiter.api.Test;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -12,8 +13,9 @@ public class PaperTest {
     /**
      * 测试Paper类
      */
+    @Test
     public void paperTest()  {
-        String path= "cn/cyf/orig.txt";
+        String path= "C:\\Users\\caibu\\Desktop\\orig.txt";
         try {
             new Paper(path, new HashSet<String>());
         }catch (FileNotFoundException e){
